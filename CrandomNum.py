@@ -24,9 +24,10 @@ while True:
         while True:
             try:
                 guessNum = int(input("Try and guess the number: "))
-                break
             except:
-                print("Input another number again, there was an error: ")
+                print("An error occured, try again. ")
+            else:
+                break
 
         WinOrTry = highLowOr(guessNum)
 
@@ -41,12 +42,12 @@ while True:
         if anotherGame == "n" or anotherGame == "N" or anotherGame == "y" or anotherGame == "Y":
             break
         else:
-            print("Error, try again.")
+            print("An error occured, try again.")
     
     if anotherGame == "n" or anotherGame == "N":
         print("Thanks for playing...")
         break
     else:
-        pass
+        print("Game reloading...\n")
 
 print("\nDone")
