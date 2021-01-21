@@ -10,7 +10,7 @@ while True:
 
     def highLowOr(x):
         if x == randomNum:
-            print("Congratualtions!!")
+            print("Congratulations!!")
             return True    
         elif x < randomNum:
             print("Higher")
@@ -38,12 +38,12 @@ while True:
     while True:
         global anotherGame
         anotherGame = input("\nDo you want another game (y/n): ")
-        if anotherGame == "n" and anotherGame == "N" and anotherGame == "y" and anotherGame == "Y":
-            print("Error, try again.")
-        else:
+        if anotherGame == "n" or anotherGame == "N" or anotherGame == "y" or anotherGame == "Y":
             break
+        else:
+            print("Error, try again.")
     
-    if anotherGame == "n" and anotherGame == "N":
+    if anotherGame == "n" or anotherGame == "N":
         print("Thanks for playing...")
         break
     else:
