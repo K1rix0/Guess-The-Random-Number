@@ -6,7 +6,7 @@ from random import randrange as ran
 print("~~~~~~~~~~~~~ Guess The Number ~~~~~~~~~~~~~")
 
 while True:
-    print("You have 7 tries...\n")
+    print("You have 8 tries...\n")
 
     def highLowOr(x):
         if x == randomNum:
@@ -20,7 +20,7 @@ while True:
             return False
 
     randomNum = ran(0, 101)
-    for x in range(7):
+    for x in range(8):
         while True:
             try:
                 guessNum = int(input("Try and guess the number: "))
