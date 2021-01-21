@@ -26,7 +26,7 @@ while True:
                 guessNum = int(input("Try and guess the number: "))
                 break
             except:
-                print("Print the numebr again, there was an error: ")
+                print("Input another number again, there was an error: ")
 
         WinOrTry = highLowOr(guessNum)
 
