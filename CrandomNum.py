@@ -48,6 +48,6 @@ while True:
         print("Thanks for playing...")
         break
     else:
-        print("Game reloading...\n")
+        print("New game reloading...\n")
 
 print("\nDone")
